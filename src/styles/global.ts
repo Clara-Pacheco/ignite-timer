@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100vh;
 
     font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
 
     background-color: ${({ theme }) => theme['gray-900']};
     color: ${({ theme }) => theme.white};
