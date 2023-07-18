@@ -30,6 +30,33 @@ export const FormContainer = styled.div`
   flex-wrap: wrap;
 `
 
+const BaseInput = styled.input`
+  background: transparent;
+  height: 2.5rem;
+  border: 0;
+  border-bottom: 2px solid ${({ theme }) => theme['gray-500']};
+  font-weight: bold;
+  font-size: inherit;
+  padding: 0.8rem;
+
+  &:focus {
+    box-shadow: none;
+    border-color: ${({ theme }) => theme['green-500']};
+  }
+
+  &::placeholder {
+    color: ${({ theme }) => theme['gray-500']};
+  }
+`
+
+export const TaskInput = styled(BaseInput)`
+  flex: 1;
+`
+
+export const MinutesAmountInput = styled(BaseInput)`
+  width: 7.2rem;
+`
+
 export const CountDownContainer = styled.div`
   font-family: 'Roboto Mono', monospace;
   font-size: 16rem;
