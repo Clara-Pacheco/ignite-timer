@@ -62,3 +62,31 @@ export const Separator = styled.div`
   display: flex;
   justify-content: center;
 `
+
+export const StartCountDownButton = styled.button`
+  width: 64.8rem;
+  height: 6.4rem;
+  border: 0;
+  padding: 1.6rem 4rem;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  background-color: ${({ theme }) => theme['green-500']};
+  color: ${({ theme }) => theme['gray-100']};
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background: ${({ theme }) => theme['green-700']};
+  }
+`
