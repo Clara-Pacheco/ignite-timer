@@ -28,6 +28,8 @@ export const FormContainer = styled.div`
   font-size: 1.8rem;
   font-weight: bold;
   flex-wrap: wrap;
+
+  margin-top: 60px;
 `
 
 const BaseInput = styled.input`
